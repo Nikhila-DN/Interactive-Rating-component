@@ -1,0 +1,121 @@
+
+/* Frontend Mentor | Interactive rating component */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container, .thank-you{
+    background-color:  hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    vertical-align: middle;
+    border-radius: 0.6rem;
+    margin: 10% auto;
+    width: 350px;
+   
+}
+.main-container img{
+    background-color:hsl(216 7.41% 30.93%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: block;
+    text-align: left;
+}
+h1{
+    text-align: left;
+}
+.main-container h1, .thank-you h2{
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+}
+.main-container p, .thank-you p{
+    font-family: inherit;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    text-align: left;
+}
+.hidden{
+    display: none;
+}
+.thank-you{
+    text-align: center;
+}
+.thank-you p{
+    text-align:center ;
+}
+.thank-you .rate{
+    width: max-content;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(25, 97%, 53%) !important;
+    background-color:hsl(216 7.41% 30.93%) ;
+    border-radius: 2rem;
+    vertical-align: middle;
+    margin: auto;
+    padding: 0.3rem 0.6rem
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+ul .btn{
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    background-color:hsl(216 7.41% 30.93%) ;
+    color: hsl(217, 12%, 63%);
+}
+
+ul .btn,.btn-submit{
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-submit{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    color: hsl(25, 97%, 53%) ;
+    background-color: white;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 0.7rem;
+}
+.btn-submit:hover, .btn:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%) ;
+}
+.btn:focus{
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+/* .btn-submit:onclick, .btn:onclick{
+    color: white;
+    background-color: hsl(25, 97%, 53%) ;
+} */
+@media screen and (max-width:480px) {
+    .main-container, .thank-you{
+        width: 80%;
+    }
+    ul .btn{
+        padding: 0.5rem 0.7rem;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: white;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
